@@ -1,0 +1,35 @@
+package testproject;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class test1_22_7 {
+	public static void main(String[] args){
+		 ArrayList listarray = new ArrayList();
+		 listarray.add("1");
+		 listarray.add("c");
+		 listarray.add("A");
+		 listarray.add("5");
+		 listarray.add("2");
+		 listarray.add("4");
+		 System.out.println(listarray);
+		 Collections.sort(listarray);
+		 System.out.println(listarray);
+		 System.out.println("ArrayList elements after sorting in ascending order : ");
+		 for(int i=0; i<listarray.size(); i++){
+			 System.out.println(listarray.get(i));
+		 }
+		 for(Object s:listarray){
+			 System.out.println(s);
+		 }
+		 
+		 ArrayList<String> list2 = new ArrayList<String>();
+		 list2.add("1");
+		 list2.add("c");
+		 System.out.println(list2);
+		 for(String s:list2){
+			 System.out.println(s);
+		 }
+	}
+
+}
